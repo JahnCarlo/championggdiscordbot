@@ -24,7 +24,7 @@ bot.on("message", async message => {
 
     if(!command.startsWith(botSettings.prefix)) return;
 
-    if(command === `${botSettings.prefix}championgg`){
+    if(command === `${botSettings.prefix}cgg`){
     message.channel.send("https://champion.gg/champion/" + champion + "/Middle?league=");
     //    let embed = new Discord.RichEmbed()
     //    .setAuthor(message.author.username)
