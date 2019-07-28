@@ -18,7 +18,7 @@ class championgg extends commando.Command {
         let command = messageArray[0];
         let champion = messageArray[1];
         let args1 = messageArray.slice(1);
-        message.channel.send("https://champion.gg/champion/" + champion + "/Middle?league=");
+        message.channel.send("https://champion.gg/champion/" + champion);
         return;
     }
 }
