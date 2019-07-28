@@ -1,7 +1,7 @@
 const commando = require('discord.js-commando');
 
 class DiceRollCommand extends commando.Command{
-    constructor(cient){
+    constructor(client){
         super(client,{
             name: 'roll',
             group: 'random',
