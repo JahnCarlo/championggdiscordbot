@@ -25,6 +25,7 @@ bot.on("message", async message => {
     if(!command.startsWith(botSettings.prefix)) return;
 
     if(command === `${botSettings.prefix}championgg`){
+    message.channel.send("https://champion.gg/champion/" + champion + "/Middle?league=");
     //    let embed = new Discord.RichEmbed()
     //    .setAuthor(message.author.username)
     //    .setDescription("This is the user's info!")
@@ -34,8 +35,6 @@ bot.on("message", async message => {
     //    .addField("Created At", message.author.createdAt)
 
     //    message.channel.send(embed);
-    message.channel.send("https://champion.gg/champion/" + champion + "/Middle?league=");
-
        return;
     }
 });
