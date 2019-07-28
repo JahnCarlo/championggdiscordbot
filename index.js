@@ -33,10 +33,21 @@ bot.on("message", async message => {
     //    .addField("Full Username", `${message.author.username}#${message.author.discriminator}`)
     //    .addField("ID", message.author.id)
     //    .addField("Created At", message.author.createdAt)
-
     //    message.channel.send(embed);
        return;
     }
+    if(command === `${botSettings.prefix}ph`){
+        message.channel.send("https://www.pornhub.com/categories/" + champion);
+        //    let embed = new Discord.RichEmbed()
+        //    .setAuthor(message.author.username)
+        //    .setDescription("This is the user's info!")
+        //    .setColor("#00ff9b")
+        //    .addField("Full Username", `${message.author.username}#${message.author.discriminator}`)
+        //    .addField("ID", message.author.id)
+        //    .addField("Created At", message.author.createdAt)
+        //    message.channel.send(embed);
+           return;
+        }
 });
 
 // bot.registry.registerGroup('random', 'Random');
