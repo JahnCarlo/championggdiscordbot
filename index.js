@@ -1,5 +1,11 @@
 const botSettings = require("./botsettings.json");
 const Discord = require('discord.js');
+const commando = require('discord.js-commando');
+const bot1 = new commando.Client();
+
+bot1.registry.registerGroup('random', 'Random');
+bot1.registry.registerDefaults();
+bot1.registry.registerCommandsIn(__dirname + "/commands");
 
 const bot = new Discord.Client({disableEveryone: true});
 
@@ -26,14 +32,6 @@ bot.on("message", async message => {
 
     if(command === `${botSettings.prefix}cgg`){
     message.channel.send("https://champion.gg/champion/" + champion + "/Middle?league=");
-    //    let embed = new Discord.RichEmbed()
-    //    .setAuthor(message.author.username)
-    //    .setDescription("This is the user's info!")
-    //    .setColor("#00ff9b")
-    //    .addField("Full Username", `${message.author.username}#${message.author.discriminator}`)
-    //    .addField("ID", message.author.id)
-    //    .addField("Created At", message.author.createdAt)
-    //    message.channel.send(embed);
        return;
     }
     if(command === `${botSettings.prefix}ph`){
@@ -42,8 +40,16 @@ bot.on("message", async message => {
         }
 });
 
-// bot.registry.registerGroup('random', 'Random');
-// bot.registry.registerDefaults();
-// bot.registry.registerCommandsIn(__dirname + "/commands");
+
 
 bot.login(botSettings.token);
+
+
+//    let embed = new Discord.RichEmbed()
+    //    .setAuthor(message.author.username)
+    //    .setDescription("This is the user's info!")
+    //    .setColor("#00ff9b")
+    //    .addField("Full Username", `${message.author.username}#${message.author.discriminator}`)
+    //    .addField("ID", message.author.id)
+    //    .addField("Created At", message.author.createdAt)
+    //    message.channel.send(embed);
