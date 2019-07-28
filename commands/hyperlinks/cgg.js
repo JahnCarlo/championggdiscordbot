@@ -5,7 +5,7 @@ class championgg extends commando.Command {
     constructor(client){
         super(client, {
             name: 'cgg',
-            group: 'league',
+            group: 'hyperlinks',
             memberName: 'cgg',
             description: 'Generates hyperlink for champion given as input.' 
         });

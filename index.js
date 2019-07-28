@@ -8,7 +8,7 @@ const bot = new Discord.Client({disableEveryone: true});
 
 //creates groups
 bot.registry.registerGroup('random', 'Random');
-bot.registry.registerGroup('league', 'League')
+bot.registry.registerGroup('hyperlinks', 'Hyperlinks')
 bot.registry.registerDefaults();
 bot.registry.registerCommandsIn(__dirname + "/commands");
 
