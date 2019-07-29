@@ -34,17 +34,24 @@ https://github.com/JahnCarlo/championggdiscordbot
 12) in this file you need to pace this code including the brackets and add the Token from step 5 inside the quotation marks:
 {
     "token": "Token From Step 5",
-    "prefix": "!"
+    "prefix": "~"
 }
 13) Next you need to connect to the git repository (look it up online, lel)
 14) Once you connect to git, you need to install your dependencies
     npm install discord.js-commando --save
     npm install discord.js --save
 
+15) After installing discord.js-commando you need to navigate to this folder and find a client.js file.
+    Here you need to add this line:
+    const botsettings =require('PATH TO BOT SETTINGS')
+16) In line 30 or the one with the prefix "!" delete all of that and type in:
+    botsettings.prefix
+
+    This way you only have to save it in your bot settings
+
     These two will install necesary dependecies for now.
 
 After this you should be able to run your code/bot by doing 'node .' in the terminal this will activate the bot in the server
-
 
 
 
