@@ -1,6 +1,6 @@
-const commando = require('discord.js-commando');
+import { Command } from 'discord.js-commando';
 
-class championgg extends commando.Command {
+class phhyperlink extends Command {
 
     constructor(client){
         super(client, {
@@ -16,11 +16,11 @@ class championgg extends commando.Command {
 
         let messageArray = message.content.split(" ");
         let command = messageArray[0];
-        let champion = messageArray[1];
+        let categoria = messageArray[1];
         let args1 = messageArray.slice(1);
-        message.channel.send("https://www.pornhub.com/category/" + champion);
+        message.channel.send("https://www.pornhub.com/category/" + categoria);
         return;
     }
 }
 
-module.exports = championgg;
+export default phhyperlink;
